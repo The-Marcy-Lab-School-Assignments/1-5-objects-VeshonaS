@@ -92,9 +92,17 @@ const listAllValues = (object) => {
 };
 
 const convertToMatrix = (arrOfObjs) => {
-  if (arrOfObjs === 0){
+
+  if (arrOfObjs.length === 0){
     return []
   }
+  let arr = [Object.keys(arrOfObjs[0])]
+  
+  for (const currentValues of arrOfObjs){
+    console.log("current:" , Object.values(currentValues))
+    arr.push(Object.values(currentValues))
+  }
+  return arr 
 }
 
 
