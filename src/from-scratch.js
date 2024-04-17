@@ -1,3 +1,4 @@
+/** FEEDBACK: Great job! You have all test cases passing! */
 const coolGreeting = (person) => {
   if (person.isCool === true ){
     return "What is UP " + person.name.toUpperCase() + "? How you been doin'?"
@@ -63,7 +64,7 @@ const weAreNotFriends = (person) => {
 // };
 // let breakup = weAreNotFriends(person1)
 // console.log(breakup)
-
+/** FEEDBACK: This is hardcoded, is there anyway you can make this dynamic? */
 const listHobbies = (person) => {
  console.log(`${person.name} likes ${person.hobbies[0]}.`)
  console.log(`${person.name} likes ${person.hobbies[1]}.`)
